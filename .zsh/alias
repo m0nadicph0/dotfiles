@@ -1,0 +1,13 @@
+# Git aliases
+
+alias gs='git status'
+alias gcm='git commit -m'
+alias gl='git log'
+alias gls='git log --abbrev-commit'
+alias gaa='git add -A'
+alias grsa='git commit --amend --reset-author'
+alias gpom='git push origin main'
+alias gpum='git pull origin main'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias glo='git log --pretty="%C(green)%h %C(red)%ad %C(magenta) %an %C(yellow)%s " --date=human'
