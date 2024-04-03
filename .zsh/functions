@@ -1,0 +1,20 @@
+take() {
+    mkdir -p $1
+    cd $1
+}
+
+dksh() {
+  docker exec -it $1 /bin/sh
+}
+
+dkbash() {
+  docker exec -it $1 /bin/bash
+}
+
+dkzsh() {
+  docker exec -it $1 /bin/zsh
+}
+
+
+
+
