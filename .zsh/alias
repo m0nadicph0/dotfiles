@@ -1,4 +1,4 @@
-# Git aliases
+# Git 
 
 alias gs='git status'
 alias gcm='git commit -m'
@@ -11,3 +11,31 @@ alias gpum='git pull origin main'
 alias gco='git checkout'
 alias gcb='git checkout -b'
 alias glo='git log --pretty="%C(green)%h %C(red)%ad %C(magenta) %an %C(yellow)%s " --date=human'
+
+# Docker
+
+alias dk='docker'
+alias dkps='docker ps'
+alias dkpsa='docker ps -a'
+alias dkpsf='docker ps --filter'
+alias dkpss='docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Ports}}\t{{.Networks}}\t{{.Mounts}}\t{{.State}}"'
+alias dkrm='docker rm'
+alias dkrma='docker rm $(docker ps -aq)'
+alias dklogs='docker logs -t -f'
+alias dkb='docker build'
+alias dkimgs='docker images'
+alias dkrmia='docker rmi $(docker image ls -aq)'
+
+# Docker compose
+
+alias dc='docker compose'
+alias dcu='docker compose up -d'
+alias dcd='docker compose down'
+alias dcdv='docker compose down -v'
+
+
+# Go
+alias gob='go build'
+alias goc='go clean'
+alias gof='go fmt'
+
